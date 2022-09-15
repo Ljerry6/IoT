@@ -10,3 +10,7 @@
 ### 5. Ladattiin php-mysql connector.
 ### 6. Restartattiin apache2.
 ### 7. Testatiin serveriä.
+
+### 15.9.2022
+### Tehtiin tietokanta nimeltä SMarket
+### Tehtiin molemmille omat tietokannat ja niihin taulukot
