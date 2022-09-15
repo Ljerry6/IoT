@@ -12,5 +12,5 @@
 ### 7. Testatiin serveriä.
 
 ### 15.9.2022
-### Tehtiin tietokanta nimeltä SMarket
-### Tehtiin molemmille omat tietokannat ja niihin taulukot
+### 1. Tehtiin tietokanta nimeltä SMarket
+### 2. Tehtiin molemmille omat tietokannat ja niihin taulukot
