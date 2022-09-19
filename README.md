@@ -31,16 +31,16 @@
     </summary>
   
       import time
-      import RPi.GPIO as GPIO
+      import RPi.GPIO as GPIO ## Lisättiin libraryt jota voi käyttää koodissa
       
-      pin = 4
-      GPIO.setmode(GPIO.BCM)
+      pin = 4 ## Variable
+      GPIO.setmode(GPIO.BCM) ## Setuppi
       GPIO.setup(pin, GPIO.IN)
       
       def getTime():
         result = time.localtime()
         time_string = time.strftime("%m/%d&%y/, %H:%M:%S:", result)
-        return time_string
+        return time_string ## Funktiolla haetaan aikaa
         
       try:
         while True:
@@ -49,7 +49,7 @@
             print("Liikettä: "+ str(timeResult))
           else:
             print("Ei liikettä: "+ str(timeResult))
-          time.sleep(2.5)
+          time.sleep(2.5) ## Kokeillaan onko virheitä jos ei ole niin toimii
       except:
         print("-")
         GPIO.cleanup()
