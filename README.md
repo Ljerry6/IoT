@@ -33,7 +33,7 @@
       import time
       import RPi.GPIO as GPIO // (Lisättiin libraryt jota voi käyttää koodissa)
       
-      pin = 4 ## Variable
+      pin = 4 // (Variable)
       GPIO.setmode(GPIO.BCM)   // (Setuppi)
       GPIO.setup(pin, GPIO.IN)
       
