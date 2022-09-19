@@ -24,7 +24,7 @@
 #### 7. SELECT * FROM Liike;
 
  <h3>15.9.2022</h3>
-  Tehtiin liikesensori pelkällä Raspberryllä.
+  # Tehtiin liikesensori pelkällä Raspberryllä.
   <details>
     <summary>
       Koodi:
