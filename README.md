@@ -23,7 +23,7 @@
 #### 6. INSERT INTO Liike (arvo, aika) VALUES (false, now());
 #### 7. SELECT * FROM Liike;
 
- <h3>15.9.2022</h3>
+ <h3>19.9.2022</h3>
   Tehtiin liikesensori pelkällä Raspberryllä.
   <details>
     <summary>
