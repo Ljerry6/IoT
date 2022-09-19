@@ -22,3 +22,35 @@
 #### 5. PRAGMA TABLE_INFO(Liike)
 #### 6. INSERT INTO Liike (arvo, aika) VALUES (false, now());
 #### 7. SELECT * FROM Liike;
+
+ <h3>15.9.2022</h3>
+  Tehtiin liikesensori pelkällä Raspberryllä.
+  <details>
+    <summary>
+      Koodi:
+    </summary>
+  
+      import time
+      import RPi.GPIO as GPIO
+      
+      pin = 4
+      GPIO.setmode(GPIO.BCM)
+      GPIO.setup(pin, GPIO.IN)
+      
+      def getTime():
+        result = time.localtime()
+        time_string = time.strftime("%m/%d&%y/, %H:%M:%S:", result)
+        return time_string
+        
+      try:
+        while True:
+          timeResult = getTime()
+          if GPIO.input(pin):
+            print("Liikettä: "+ str(timeResult))
+          else:
+            print("Ei liikettä: "+ str(timeResult))
+          time.sleep(2.5)
+      except:
+        print("-")
+        GPIO.cleanup()
+  </details>
