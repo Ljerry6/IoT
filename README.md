@@ -82,9 +82,13 @@
 ### 3. Miten vaihdetaan polusta toiseen = $cd ~
 </details>
 
- <details>
+
+
+  <h3>20.9.2022</h3>
+  Tehtävät 3:
+  <details>
     <summary>
-      Tehtävät 3:
+     
     </summary>
   
       apt-get update
