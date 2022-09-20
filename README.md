@@ -69,3 +69,10 @@
 ### 4. SIP on IP-puhelinyhteyksien luonnista vastaava tietoliikenneprotokolla. SIP on korvaamassa vanhemman videoneuvotteluun käytetyn H.323-protokollan. SIP-protokollan avulla voidaan muodostaa puhelinyhteyksiä.
 ### 5. Mitä eroa on I2C ja SIP? I2C on half-duplex-viestintä ja SPI on full-duplex-viestintä. I2C on kaksijohtiminen protokolla ja SPI on nelijohdinprotokolla.
 </details>
+
+  <h3>20.9.2022</h3>
+  Tehtävät 20.9.2022
+   <details>
+    <summary>
+     Tehtävät 2:
+ </summary>
