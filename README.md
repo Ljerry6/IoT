@@ -76,3 +76,7 @@
     <summary>
      Tehtävät 2:
  </summary>
+
+Raspberryn lämpötila = $vcgencmd measure_temp
+Kuinka paljon tilaa jäljellä = $df -Bm
+Miten vaihdetaan polusta toiseen = $cd ~
