@@ -84,11 +84,9 @@
 
 
 
-  <h3>20.9.2022</h3>
-  Tehtävät 3:
   <details>
     <summary>
-     
+      Lista:
     </summary>
   
       apt-get update
