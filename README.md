@@ -134,3 +134,6 @@
       vcgencmd get_mem arm && vcgencmd get_mem gpu = arm memoryn käyttö ja GPU memoryn käyttö
       
   </details>
+  
+  
+ ### 22.9.2022
