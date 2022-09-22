@@ -137,14 +137,15 @@
   
   
  ### 22.9.2022
- ### Tehtävät
+ 
+ ### Tehtävä 1.
  
  
  ### A)
-  #### sudo mariadb
-  #### show databases;
+  #### sudo mariadb (käynnistää mariadb:n)
+  #### show databases; (näyttää tietokannat)
   
   ### B)
-  #### use SMarket
-  #### SELECT * FROM Liike;
-  
+  #### use SMarket (menee tietokantaan)
+  #### SELECT * FROM Liike; (avaa taulukon)
+  #### Tai: select data_type from information_schema.colums where table_schema = 'SMarket' and table_name = "Liike" (näyttää taulukon data tyypit)
