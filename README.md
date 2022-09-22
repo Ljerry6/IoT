@@ -146,14 +146,14 @@
  
  
   A)
-   sudo mariadb (käynnistää mariadb:n)
-   show databases; (näyttää tietokannat)
+    - sudo mariadb (käynnistää mariadb:n)
+    - show databases; (näyttää tietokannat)
   
   B)
-   use SMarket (menee tietokantaan)
-   SELECT * FROM Liike; (avaa taulukon)
-   desc Liike; (näyttää kaiken tiedon)
-   Tai: select data_type from information_schema.colums where table_schema = 'SMarket' and table_name = "Liike" (näyttää taulukon data tyypit)
+    - use SMarket (menee tietokantaan)
+    - SELECT * FROM Liike; (avaa taulukon)
+    - desc Liike; (näyttää kaiken tiedon)
+ 
   
   </details>
   
