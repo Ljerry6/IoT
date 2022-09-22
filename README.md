@@ -204,6 +204,8 @@ except:
     print("Ei toimi")
     
 conn.close()
+ 
+  </details>
   
   
   
