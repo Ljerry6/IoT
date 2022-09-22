@@ -135,10 +135,10 @@
       
   </details>
   
-  
+   <h3>22.9.2022</h3>
   <details>
     <summary>
-      22.9.2022 Tehtävä 1
+     Tehtävä 1.
     </summary>
  
  
