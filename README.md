@@ -142,6 +142,7 @@
     </summary>
  
  A)
+ 
      # sudo mariadb (käynnistää mariadb:n)
     # show databases; (näyttää tietokannat)
   
