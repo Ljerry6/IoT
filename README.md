@@ -141,18 +141,14 @@
      Tehtävä 1.
     </summary>
  
- 
- 
- 
- 
-  A)
-    - sudo mariadb (käynnistää mariadb:n)
-    - show databases; (näyttää tietokannat)
+ A)
+    # sudo mariadb (käynnistää mariadb:n)
+    # show databases; (näyttää tietokannat)
   
   B)
-    - use SMarket (menee tietokantaan)
-    - SELECT * FROM Liike; (avaa taulukon)
-    - desc Liike; (näyttää kaiken tiedon)
+    # use SMarket (menee tietokantaan)
+    # SELECT * FROM Liike; (avaa taulukon)
+    # desc Liike; (näyttää kaiken tiedon)
  
   
   </details>
