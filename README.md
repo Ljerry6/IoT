@@ -185,7 +185,9 @@ cur = conn.cursor()
 
 
 try:
-    while True:
+
+ 
+ while True:
         
         inputType = GPIO.input(inputPin)
         curTime = datetime.datetime.now()
