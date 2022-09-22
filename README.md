@@ -137,3 +137,14 @@
   
   
  ### 22.9.2022
+ ### Tehtävät
+ 
+ 
+ ### A)
+  #### sudo mariadb
+  #### show databases;
+  
+  ### B)
+  #### use SMarket
+  #### SELECT * FROM Liike;
+  
