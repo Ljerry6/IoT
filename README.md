@@ -211,6 +211,40 @@
     <summary>
      DHT11
     </summary>
+ 
+import time
+import Adafruit_DHT
+import datetime
+import mariadb
+
+
+
+sensor = Adafruit_DHT.DHT11
+pin = 4
+waitTime = 5
+
+
+
+conn = mariadb.connect(user="jaje", password="JarcoJerry1", host="localhost", database="SMarket")
+cur = conn.cursor()
+
+
+
+try:
+    while True:
+        
+        curTime = datetime.datetime.now()
+        humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
+        
+        sqlStr = "INSERT INTO Liike (arvo, aika) VALUES({boolean}, '{timeCurrently}')".format(boolean = temperature, timeCurrently = curTime)
+        
+        print(sqlStr)
+        cur.execute(sqlStr)
+        conn.commit()
+        time.sleep(waitTime)
+        
+except RuntimeError as error:
+    print(error.args[0])
+    print("Ei Toimi")
   
-  
-  
+   </details>
