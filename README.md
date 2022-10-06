@@ -405,3 +405,21 @@
      </html>
 
 </details>
+
+
+
+
+<h3>6.10.2022</h3>
+  <details>
+     <summary>
+       PHP index
+     </summary>
+
+       Tehtiin azure serveri MySQL workbenchillä
+       kirjauduttiin admin-tunnuksilla
+       
+       komennot:
+       - cd Tietopolku
+       - $php -S localhost:8000
+       
+       </details>
