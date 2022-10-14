@@ -4,6 +4,7 @@
 
 ### Ryhmätyö Jarco
 
+
 ![kaava drawio](https://user-images.githubusercontent.com/113332610/189615513-e08b5469-86d4-45cd-aecb-be395c0a7cd5.png)
 #### Aloitettiin Raspberryn asennus, ladattiin Raspberryn asennus SD kortille, siirrettiin ja aukaistiin se toisella läppärillä. Tehtiin tunnukset raspberryyn ja ladatiin päivitykset. Päivityksen jälkeen rebootattiin kone, ja asennus oli valmis. Asennuksen jälkeen aloitettiin tekemään toista asennusta command promptissa, ja tehtiin seuraavasti.
 
@@ -81,6 +82,8 @@
 ### 5. Mitä eroa on I2C ja SIP? I2C on half-duplex-viestintä ja SPI on full-duplex-viestintä. I2C on kaksijohtiminen protokolla ja SPI on nelijohdinprotokolla.
 </details>
 
+--------------------------------------------------------------------------------------------------
+
   <h3>20.9.2022</h3>
   Tehtävät
    <details>
@@ -93,7 +96,7 @@
 ### 3. Miten vaihdetaan polusta toiseen = $cd ~
 </details>
 
-
+--------------------------------------------------------------------------------------------------
 
   <details>
     <summary>
@@ -145,6 +148,8 @@
       vcgencmd get_mem arm && vcgencmd get_mem gpu = arm memoryn käyttö ja GPU memoryn käyttö
       
   </details>
+  
+  --------------------------------------------------------------------------------------------------
   
    <h3>22.9.2022</h3>
   <details>
