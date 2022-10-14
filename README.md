@@ -1,19 +1,24 @@
 # IoT
+
 ### 12.9.2022 Projektin suunnitelma
-### Jarco
+
+### Ryhmätyö Jarco
+
 ![kaava drawio](https://user-images.githubusercontent.com/113332610/189615513-e08b5469-86d4-45cd-aecb-be395c0a7cd5.png)
 ### Aloitettiin Raspberryn asennus, ladattiin Raspberryn asennus SD kortille, siirrettiin ja aukaistiin se toisella läppärillä. Tehtiin tunnukset raspberryyn ja ladatiin päivitykset. Päivityksen jälkeen rebootattiin kone, ja asennus oli valmis. Asennuksen jälkeen aloitettiin tekemään toista asennusta command promptissa, ja tehtiin seuraavasti.
-### 1. Päivitettiin packages.
-### 2. Ladattiin apache2.
-### 3. Ladattiin php.
-### 4. Ladattiin mariadb.
-### 5. Ladattiin php-mysql connector.
-### 6. Restartattiin apache2.
-### 7. Testatiin serveriä.
+
+ 1. Päivitettiin packages.
+ 2. Ladattiin apache2.
+ 3. Ladattiin php.
+ 4. Ladattiin mariadb.
+ 5. Ladattiin php-mysql connector.
+ 6. Restartattiin apache2.
+ 7. Testatiin serveriä.
 
 ### 15.9.2022
-### 1. Tehtiin tietokanta nimeltä SMarket
-### 2. Tehtiin molemmille omat tietokannat ja niihin taulukot
+ 
+ 1. Tehtiin tietokanta nimeltä SMarket
+ 2. Tehtiin molemmille omat tietokannat ja niihin taulukot
 
 #### 1. sudo mariadb
 #### 2. CREATE DATABASE Jerry_SMarket;
