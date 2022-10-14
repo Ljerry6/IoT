@@ -83,7 +83,6 @@
 ### 5. Mitä eroa on I2C ja SIP? I2C on half-duplex-viestintä ja SPI on full-duplex-viestintä. I2C on kaksijohtiminen protokolla ja SPI on nelijohdinprotokolla.
 </details>
 
-  <h3>Päivän toiset tehtävät</h3>
    <details>
     <summary>
      Tehtävät 2:
@@ -94,11 +93,9 @@
 ### 3. Miten vaihdetaan polusta toiseen = $cd ~
 </details>
 
---------------------------------------------------------------------------------------------------
-
   <details>
     <summary>
-      Lista:
+      Tehtävät 3:
     </summary>
   
       apt-get update = päivittää raspberryn
