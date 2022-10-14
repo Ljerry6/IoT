@@ -83,8 +83,6 @@
 ### 5. Mitä eroa on I2C ja SIP? I2C on half-duplex-viestintä ja SPI on full-duplex-viestintä. I2C on kaksijohtiminen protokolla ja SPI on nelijohdinprotokolla.
 </details>
 
---------------------------------------------------------------------------------------------------
-
   <h3>20.9.2022</h3>
   Tehtävät
    <details>
