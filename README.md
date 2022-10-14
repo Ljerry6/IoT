@@ -25,13 +25,13 @@
 
 --------------------------------------------------------------------------------------------------
 
-#### 1. sudo mariadb
-#### 2. CREATE DATABASE Jerry_SMarket;
-#### 3. use SMarket
-#### 4. CREATE TABLE Liike (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);
-#### 5. PRAGMA TABLE_INFO(Liike)
-#### 6. INSERT INTO Liike (arvo, aika) VALUES (false, now());
-#### 7. SELECT * FROM Liike;
+   #### 1. sudo mariadb
+   #### 2. CREATE DATABASE Jerry_SMarket;
+   #### 3. use SMarket
+   #### 4. CREATE TABLE Liike (id int AUTO_INCREMENT NOT NULL PRIMARY KEY, arvo boolean, aika datetime);
+   #### 5. PRAGMA TABLE_INFO(Liike)
+   #### 6. INSERT INTO Liike (arvo, aika) VALUES (false, now());
+   #### 7. SELECT * FROM Liike;
 
 --------------------------------------------------------------------------------------------------
 
