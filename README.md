@@ -97,49 +97,49 @@
       Tehtävät 3:
     </summary>
   
-   apt-get update = päivittää raspberryn
-   clear = pyyhkii kaiken terminaalista
-   date = näyttää päivämäärän
-   find / -name esimerkki.txt = etsii tiedoston nimellä
-   nano example.txt = voi kontrolloida
-   poweroff = laittaa virrat kiinni
-   raspi-config = aukaisee raspin configurationin
-   reboot = käynnistää uudelleen
-   shutdown -h now = sulkee heti
-   shutdown -h 01:22: = sulkee asettaman ajan päästä
-   startx = menee serverille X
+      apt-get update = päivittää raspberryn
+      clear = pyyhkii kaiken terminaalista
+      date = näyttää päivämäärän
+      find / -name esimerkki.txt = etsii tiedoston nimellä
+      nano example.txt = voi kontrolloida
+      poweroff = laittaa virrat kiinni
+      raspi-config = aukaisee raspin configurationin
+      reboot = käynnistää uudelleen
+      shutdown -h now = sulkee heti
+      shutdown -h 01:22: = sulkee asettaman ajan päästä
+      startx = menee serverille X
 
-   cat esimerkki.txt = aukaisee tai tekee tiedoston
-   cd/abc/xyz = path directory
-   ls -l = listaa sovellukset
-   mkdir esimerkki:_polku = tekee directoryn
-   mv XXX = ei löydy
-   rm esimerkki.txt = poistaa tiedoston
-   scp user@10.0.0.32:/some/path/tiedosto.txt = kopioi tiedostoja kahden paikan välillä
-   touch example.txt = muuttaa timestamppia
+      cat esimerkki.txt = aukaisee tai tekee tiedoston
+      cd/abc/xyz = path directory
+      ls -l = listaa sovellukset
+      mkdir esimerkki:_polku = tekee directoryn
+      mv XXX = ei löydy
+      rm esimerkki.txt = poistaa tiedoston
+      scp user@10.0.0.32:/some/path/tiedosto.txt = kopioi tiedostoja kahden paikan välillä
+      touch example.txt = muuttaa timestamppia
 
-   ifconfig = näyttää netin tiedot
-   iwconfig = näyttää langattoman netin tiedot
-   iwlist wlan0 scan = scannaa langattoman yhteyden
-   iwlist wlan0 | grep ESSID = 
-   nmap = näyttää mikä service on auki
-   ping = näyttää yhteyden nopeude
-   wget https://www.website.com/example.txt = näyttää nettisivun tiedot
+      ifconfig = näyttää netin tiedot
+      iwconfig = näyttää langattoman netin tiedot
+      iwlist wlan0 scan = scannaa langattoman yhteyden
+      iwlist wlan0 | grep ESSID = 
+      nmap = näyttää mikä service on auki
+      ping = näyttää yhteyden nopeude
+      wget https://www.website.com/example.txt = näyttää nettisivun tiedot
 
 
-   cat /proc/meminfo = memoryn info
-   cat /proc/partitions = Näyttää väliseinät
-   cat /proc/version = Näyttää versiot
-   df -h = Näyttää paljon tilaa on jäljellä
-   df / = näyttää tilaa tietyllä systeemillä
-   dpkg - -get-selections | grep XXX 
-   dpkg - -get-selections
-   free = näyttää käytetyn muistin
-   hostname -l
-   lsusb = näyttää tietoja usb laitteista
-   UP key = näyttää aiemmin syötetyt komennot terminaalissa
-   vcgencmd measure_temp = näyttää raspberryn lämpötilan
-   vcgencmd get_mem arm && vcgencmd get_mem gpu = arm memoryn käyttö ja GPU memoryn käyttö
+      cat /proc/meminfo = memoryn info
+      cat /proc/partitions = Näyttää väliseinät
+      cat /proc/version = Näyttää versiot
+      df -h = Näyttää paljon tilaa on jäljellä
+      df / = näyttää tilaa tietyllä systeemillä
+      dpkg - -get-selections | grep XXX 
+      dpkg - -get-selections
+      free = näyttää käytetyn muistin
+      hostname -l
+      lsusb = näyttää tietoja usb laitteista
+      UP key = näyttää aiemmin syötetyt komennot terminaalissa
+      vcgencmd measure_temp = näyttää raspberryn lämpötilan
+      vcgencmd get_mem arm && vcgencmd get_mem gpu = arm memoryn käyttö ja GPU memoryn käyttö
       
   </details>
   
