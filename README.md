@@ -70,10 +70,9 @@
   --------------------------------------------------------------------------------------------------
   
   <h3>20.9.2022</h3>
-  Selitys Tehtävä
    <details>
     <summary>
-     Tehtävät:
+     Tehtävät 1:
  </summary>
  
 ### 1. EEPROM on haihtumatonta puolijohdemuistia, joka voidaan uudelleenkirjoittaa n. 10 000–100 000 kertaa. EEPROM-muistia käytetään pääasiassa asetustietojen tallentamiseen mikroprosessorin tai mikrokontrollerin sisältävissä laitteissa.
