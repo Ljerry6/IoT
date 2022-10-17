@@ -437,6 +437,7 @@
        komennot:
        - cd Tietopolku
        - $php -S localhost:8000
+       - (tai) php-8.1.11\php -S localhost:8000
        
    </details>
    
