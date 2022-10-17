@@ -787,13 +787,13 @@
 
                 <?php
 
-// Laitetaan muuttujat, ja niille arvot.
+               // Laitetaan muuttujat, ja niille arvot.
 
-$servername = "hyvis.mysql.database.azure.com";
-$username = "db_projekti";
-                $password = "Sivyh2022";
-                $dbname = "Jerry";
-                $conn = new mysqli($servername, $username, $password, $dbname); // Yhteys databaseen
+               $servername = "hyvis.mysql.database.azure.com";
+               $username = "db_projekti";
+               $password = "Sivyh2022";
+               $dbname = "Jerry";
+               $conn = new mysqli($servername, $username, $password, $dbname); // Yhteys databaseen
 
                 // Katsotaanko toimiiko yhteys vai ei, jos toimii se jatkaa ohjelmaa, jos ei se antaa sivulle viestin.
 
