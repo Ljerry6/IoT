@@ -891,10 +891,10 @@
 </html>
      </details>
       
-       <details>
-         <summary>
-            sent.php
-         </summary>
+<details>
+   <summary>
+      sent.php
+   </summary>
 
           <html>
           <head>
@@ -920,4 +920,4 @@
               </div>
           </body>
       </html>
-     </details>
+</details>
