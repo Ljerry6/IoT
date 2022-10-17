@@ -445,5 +445,249 @@
    <h3>PHP Nettisivu</h3>
   <details>
      <summary>
-       PHP index
+        index.php
      </summary>
+                     <html>
+                <!-- Headeri -->
+                <head>
+                    <title>Hälytin</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <link href="style/style.css" rel="stylesheet">
+
+                </head>
+
+                <body>
+
+                    <!-- Siirä data taulukkoon -->
+
+                    <div class="background2">
+                    <center>
+
+                        <!-- Otsikko -->
+
+                        <h1 style="
+                        text-align: center;
+                        color: rgb(255,55,55);
+                        font-family: Courier New;
+                        ">HÄLYTIN</h1><br>
+
+                        <!-- Ala Otsikko -->
+
+                        <img src="images/skul.png" alt="skull emoj" width=100 height=100><br><br><br>
+
+                        <!-- FORM -->
+                        <button class="collapsible" style="
+                            border: 2px solid #ccd6dd;
+                            border-radius: 5px;
+                        ">Luo käyttäjä</button>
+                        <div class="content"><br>
+                            <form
+
+                            action="https://www.salpaus.fi"
+                            method="post"
+                            enctype="text/plain"
+                            name="asasddsa"
+
+                            class="background">
+
+
+
+                                <h2 style="font-family: Courier New;">Luo käyttäjä:</h2>
+
+                                <label for="fname" class="answerText">NIMI:</label>
+                                <input type="text" class="answerBox" id="fname" name="fname"><br><br>
+
+                                <label for="nikä" class="answerText">IKÄ:</label>
+                                <input type="number" class="answerBox"  id="nikä" name="nikä"><br><br>
+
+                                <label for="tarvitsee" class="answerText">KORTIN NUMERO JA CCV:</label>
+                                <input type="text" class="answerBox"  id="tarvitsee" name="tarvitsee" required><br><br>
+
+                                <button inline="true" class="acbutton" style="
+                                  background-color: rgb(255, 119, 119);
+                                ">RESET</button>
+
+                                <button type="submit" value="Send" inline="true" class="acbutton"
+                                style="background-color: lightgreen;"
+                                background-color: lightgreen;
+                                >LÄHETÄ</button><br>
+
+
+                            </form>
+                        </div><br>
+
+                        <!-- PHP -->
+
+                        <button class="collapsible" style="
+                            border: 2px solid #ccd6dd;
+                            border-radius: 5px;
+                        ">Avaa logit</button>
+                        <div class="content">
+
+                            <!-- Ala Otsikko -->
+
+                            <h2 style="font-family: Courier New;">Data:</h2>
+
+                            <?php
+
+                            // Laitetaan muuttujat, ja niille arvot.
+
+                            include 'config.php';
+                            $conn = new mysqli($servername, $username, $password, $dbname); // Yhteys databaseen
+
+                            // Katsotaanko toimiiko yhteys vai ei, jos toimii se jatkaa ohjelmaa, jos ei se antaa sivulle viestin.
+
+                            if ($conn->connect_error){
+                                die("😭😭 Connection failed 😭😭" . $conn->connection_error);
+                            }
+
+                            // Yhteys toimii, joten jatkaa ohjelmaa. Asettaa SQL komennon ja syöttää sen.
+
+                            $sql = "SELECT id, arvo FROM JerrySQL ORDER BY -id LIMIT 10";
+                            $data = $conn->query($sql);
+                            $savingData = "['Element', 'Joku liikkui', { role: 'style' } ]," 
+
+                            // Antaa sivulle kaikki tiedot muuttujan "data" sisältä ja syöttää ne sivulle.
+
+                            ?>
+                            <table id="datalist">
+                                <style>
+
+                                table, th, td {
+                                    border-radius: 5px;
+                                }
+
+                                table {
+                                    border: 1px solid #ccd6dd;
+                                    font-family: arial, sans-serif;
+                                    width: 25%;
+                                }
+
+                                td, th {
+                                    border: 1px solid #edf7ff;
+                                    text-align: left;
+                                    padding: 10px;
+                                }
+
+                                tr:nth-child(even) {
+                                    border: 1px solid #edf7ff;
+                                    background-color: #ccd6dd;
+                                }
+
+                                </style>
+                                <tr>
+                                    <th>id</th>
+                                    <th>arvo</th>
+                                </tr>
+                            <?php
+                                while($row = $data->fetch_assoc()){
+                                $savingData = $savingData . "['" . $row["id"] . "', " . $row["arvo"] . ", 'rgb(255,55,55)'],"
+                                ?>
+                                <tr>
+                                    <td><?php echo $row["id"]?></td>
+                                    <td><?php echo $row["arvo"]?></td>
+                                </tr>
+                                <?php
+                                }
+                            ?>
+                            </table>
+                            <?php
+
+                            // Sulkee yhteyden.
+                            $conn->close();
+
+                            ?><br>
+                        </div><br>
+
+                        <button class="collapsible" style="
+                            border: 2px solid #ccd6dd;
+                            border-radius: 5px;
+                        ">Avaa kaava</button>
+                        <div class="content"><br>
+                        <div id="piechart" class='chart'> </div>
+
+
+                        </div><br>
+
+
+                        <!-- Nappula -->
+
+                        <button class="buttonVar">ILMAINEN LATAUS</button><br><br>
+                        <a href= "support.php"><button class="buttonVar">SUPPORT SIVU</button></a>
+                        <br>
+
+                        <!-- Linkki -->
+
+                        <video width="320" height="240" class="video" controls>
+                            <source src="videos/tutorial.mp4" type="video/mp4">
+                        </video><br>
+
+
+
+
+                        <p style="font-family: bold 10pt, Courier New;">Powered by S-Ketju</p>
+                        <a href="https://www.s-ryhma.fi">Linkki</a>
+
+                    </center><br>
+
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var buttonVar = document.getElementsByClassName("buttonVar")
+                        var i;
+
+                        for (i = 0; i < coll.length; i++) {
+                          coll[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.maxHeight){
+                              content.style.maxHeight = null;
+                            } else {
+                              content.style.maxHeight = content.scrollHeight + "px";
+                            } 
+                          });
+                        }
+                    </script>
+
+
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                    google.charts.load("current", {packages:['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+                    window.onresize = drawChart;
+
+                    function drawChart() {
+
+                        var data = google.visualization.arrayToDataTable([
+                            <?php
+                                echo $savingData;
+                            ?>
+                        ]);
+
+                        var view = new google.visualization.DataView(data);
+                        view.setColumns([0, 1,
+                                        { calc: "stringify",
+                                            sourceColumn: 1,
+                                            type: "string",
+                                            role: "annotation" },
+                                        2]);
+
+                        var options = {
+                            title: "Liike sensori",
+                            titleFontSize:24,
+                            fontName: "Courier New",
+                            width: "40%",
+                            height: "50%",
+                            bar: {groupWidth: "95%"},
+                            legend: { position: "left" },
+                        };
+                        var chart = new google.visualization.ColumnChart(document.getElementById("piechart"));
+                        chart.draw(view, options);
+                    }
+                    </script>
+
+
+                    </div>
+                </body>
+            </html>
+         <details>
