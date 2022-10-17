@@ -896,12 +896,12 @@
       sent.php
    </summary>
 
-          <html>
-          <head>
+      <html>
+      <head>
               <title>Lähetetty</title>
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <link href="style/style.css" rel="stylesheet">
-          </head>
+       </head>
 
           <body>
               <div class="background2">
