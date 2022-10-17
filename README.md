@@ -1129,6 +1129,8 @@
 </details>
 
 
-Lataa sivuston kuvat[![Kuvat](https://github.com/Ljerry6/IoT/blob/main/images/foldericon2.png)](https://github.com/Ljerry6/IoT/tree/main/images)
+Lataa sivuston kuvat [![Kuvat](https://github.com/Ljerry6/IoT/blob/main/images/foldericon2.png)](https://github.com/Ljerry6/IoT/tree/main/images)
+      
+Lataa sivuston videot [![Videot](https://github.com/Ljerry6/IoT/blob/main/images/foldericon2.png)](https://github.com/Ljerry6/IoT/tree/main/videos)
 
 
