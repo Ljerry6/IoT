@@ -691,3 +691,202 @@
        </body>
    </html>
    </details>
+   
+   <details>
+     <summary>
+        support.php
+     </summary>
+      
+      <html>
+    <head>
+        <title>Support</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="background2">
+            <center>
+                <h1 style="
+                text-align: center;
+                color: rgb(255,55,55);
+                font-family: Courier New;
+                ">SUPPORT</h1><br>
+                <img src="images/skul.png" alt="skull emoj" width=100 height=100><br><br><br>
+
+
+            <button class="buttonVar">ASIAKASPALVELU</button><br><br>
+            <a href= "index.php"><button class="buttonVar">TAKAISIN KOTI SIVULLE</button></a><br><br>
+        
+
+            <button class="collapsible" style="
+                border: 2px solid #ccd6dd;
+                border-radius: 5px;
+            ">Avaa formi</button>
+            <div class="content"><br>
+                <form
+                
+                action="sent.php"
+                method="post"
+                enctype="text/plain"
+                name="asasddsa"
+                
+                class="background">
+               
+
+
+                    <h2 style="font-family: Courier New;">Täytä:</h2>
+
+                    <label for="fname" class="answerText">SÄHKÖPOSTI OSOITE:</label>
+                    <input type="text" class="answerBox" id="fname" name="fname"><br><br>
+
+                    <label for="cdate" class="answerText">PVM:</label>
+                    <input type="date" class="answerBox"  id="cdate" name="cdate"><br><br>
+
+                    <label for="info" class="answerText">KERRO ONGELMASTASI:</label>
+                    <textarea rows="20" cols="50" style=
+                    "font-family: Courier New; width: 80%; height: 100px; resize: none;"
+                    id="info" name="info" maxlength="120" required></textarea><br><br>
+
+                    <button inline="true" class="acbutton" style="
+                      background-color: rgb(255, 119, 119);
+                    ">RESET</button>
+
+                    <button type="submit" value="Send" inline="true" class="acbutton"
+                    style="background-color: lightgreen;"
+                    background-color: lightgreen;
+                    >LÄHETÄ</button><br>
+                    
+                    
+                </form>
+            </div><br>
+            
+                <!-- Ala Otsikko -->
+                
+                <h2 style="font-family: Courier New;">Forumit:</h2>
+                
+                <form
+                
+                action="header.php" method="post"
+                class="messagebox">
+                
+                    <label for="fname" class="answerText">Nimi:</label>
+                    <input type="text" class="answerBox" required placeholder="Kirjoita Nimesi" id="fname" name="fname"><br><br>
+                
+                    <label for="info" class="answerText">Jätä Viesti!</label>
+                    <textarea rows="20" cols="50" style=
+                    "font-family: Courier New; width: 80%; height: 100px; resize: none;"
+                    id="info" name="info" maxlength="120" required placeholder="Kirjoita tähän" required></textarea><br><br>
+                
+                    <button type="submit" value="Send" inline="true" class="acbutton"
+                    style="background-color: lightgreen;"
+                    background-color: lightgreen;
+                    >LÄHETÄ</button>
+                
+                </form>
+
+                <?php
+
+// Laitetaan muuttujat, ja niille arvot.
+
+$servername = "hyvis.mysql.database.azure.com";
+$username = "db_projekti";
+                $password = "Sivyh2022";
+                $dbname = "Jerry";
+                $conn = new mysqli($servername, $username, $password, $dbname); // Yhteys databaseen
+
+                // Katsotaanko toimiiko yhteys vai ei, jos toimii se jatkaa ohjelmaa, jos ei se antaa sivulle viestin.
+
+                if ($conn->connect_error){
+                    die("😭😭 Connection failed 😭😭" . $conn->connection_error);
+                }
+
+                // Yhteys toimii, joten jatkaa ohjelmaa. Asettaa SQL komennon ja syöttää sen.
+
+                $sql = "SELECT username, message, aika FROM Chat ORDER BY -id LIMIT 5";
+                $data = $conn->query($sql);
+                $savingData = "['Element', 'Oh no', { role: 'style' } ]," 
+
+                // Antaa sivulle kaikki tiedot muuttujan "data" sisältä ja syöttää ne sivulle.
+
+                ?>
+                <table id="datalist">
+                    <style>
+
+                    table, th, td {
+                        border-radius: 5px;
+                    }
+
+                    table {
+                        border: 1px solid #ccd6dd;
+                        font-family: Courier New;
+                        width: 75%;
+                    }
+
+                    th {
+                        font-size: 20px;
+                    }
+
+                    td, th {
+                        border: 1px solid #edf7ff;
+                        text-align: left;
+                        padding: 10px;
+                    }
+
+                    tr:nth-child(even) {
+                        border: 1px solid #edf7ff;
+                        background-color: #DDDDDD;
+                    }
+
+                    </style>
+                    <tr>
+                        <th>Nimi</th>
+                        <th>Viesti</th>
+                        <th>Aika</th>
+                    </tr>
+                <?php
+                    while($row = $data->fetch_assoc()){
+                    ?>
+                    <tr>
+                        <td><?php echo  ("<strong>" . $row["username"] . "</strong>")?></td>
+                        <td><?php echo $row["message"]?></td>
+                        <td><?php echo $row["aika"]?></td>
+                    </tr>
+                    <?php
+                    }
+                ?>
+                </table>
+                <?php
+
+                // Sulkee yhteyden.
+                $conn->close();
+
+                ?><br>
+
+
+
+                <p style="font-family: bold 10pt, Courier New;">Powered by S-Ketju</p>
+                <a href="https://www.s-ryhma.fi">Linkki</a><br><br>
+
+            </center>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var buttonVar = document.getElementsByClassName("buttonVar")
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                    coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                        } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        } 
+                    });
+                    }
+                </script>
+        </div>
+    </body>
+</html>
+      </details>
