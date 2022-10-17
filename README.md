@@ -447,7 +447,7 @@
      <summary>
         index.php
      </summary>
-      <details>
+   
          <html>
           <!-- Headeri -->
           <head>
