@@ -896,29 +896,29 @@
          <summary>
             sent.php
          </summary>
-          
+
           <html>
-    <head>
-        <title>Lähetetty</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style/style.css" rel="stylesheet">
-    </head>
+          <head>
+              <title>Lähetetty</title>
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link href="style/style.css" rel="stylesheet">
+          </head>
 
-    <body>
-        <div class="background2">
-            <center>
-                <h1 style="
-                text-align: center;
-                color: rgb(255,55,55);
-                font-family: Courier New;
-                ">Vastauksesi on lähetetty!</h1><br>
-                <img src="images/checkmark.png" alt="skull emoj" width=115 height=100><br><br><br>
+          <body>
+              <div class="background2">
+                  <center>
+                      <h1 style="
+                      text-align: center;
+                      color: rgb(255,55,55);
+                      font-family: Courier New;
+                      ">Vastauksesi on lähetetty!</h1><br>
+                      <img src="images/checkmark.png" alt="skull emoj" width=115 height=100><br><br><br>
 
-            <a href= "index.php"><button class="buttonVar">TAKAISIN KOTI SIVULLE</button></a><br><br>
-        
+                  <a href= "index.php"><button class="buttonVar">TAKAISIN KOTI SIVULLE</button></a><br><br>
 
-            </center>
-        </div>
-    </body>
-</html>
+
+                  </center>
+              </div>
+          </body>
+      </html>
    </details>
