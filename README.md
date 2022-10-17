@@ -949,6 +949,6 @@
        $conn->close();
        header("Location: support.php");
        die();
-
    ?>
+   
 </details>
