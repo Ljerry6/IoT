@@ -955,14 +955,175 @@
       
 <details>
    <summary>
-      config.php
+      style.css
    </summary>
    
-      <?php
-      $servername = "hyvis.mysql.database.azure.com";
-      $username = "db_projekti";
-      $password = "Sivyh2022";
-      $dbname = "Jerry";
-      ?>
    
+.buttonVar {
+    box-sizing: border-box;
+    border: 2px solid #ccd6dd;
+    border-radius: 5px;
+    width: 35%;
+    height: 35px;
+    color: rgb(255,55,55);
+    background: #ffffff;
+    font-weight: bold;
+    font-family: Courier New;
+    font-size: 24px;
+}
+.answerBox {
+    font-family: Courier New;
+    width: 80%;
+}
+
+
+.chart {
+width: 40%;
+height: 50%;
+display: block;
+}
+
+.messagebox {
+    width: 25%
+
+}
+
+
+
+
+
+.answerText {
+    display: block;
+    font-family: Courier New; 
+    font-weight: bold;
+    text-align: left;
+    width: 80%;
+}
+
+.active, .buttonVar:hover {
+    background-color: #ccd6dd;
+}
+
+.collapsible {
+    background-color: #ffffff;
+    color: #292f33;
+    cursor: pointer;
+    width: 100%;
+    height: 35px;
+    border: 2px solid #ccd6dd;
+    text-align: left;
+    font-size: 15px;
+    font-family: Courier New;
+    font-weight: bold;
+    width: 35%;
+}
+
+.active, .collapsible:hover {
+    background-color: rgb(255,55,55);
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: #292f33;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.background{
+box-sizing: border-box;
+border: 2px solid #969696;
+border-radius: 5px;
+background: #ffffff;
+background-image: url('../images/testi3.png');
+width: 35%;
+}
+
+.video{
+
+    width:320px;
+    height:240px;
+}
+.background2{
+    box-sizing: border-box;
+    border: 2px solid #969696;
+    border-radius: 5px;
+    background: #ffffff;
+    background-image: url('../images/testi3.png');
+    }
+
+.acbutton{
+height: 35px;
+box-sizing: border-box;
+border: 2px solid #969696;
+width: 25%;
+border-radius: 5px;
+font-family: Courier New;
+font-weight: bold;
+margin: 25px;
+}
+@media only screen and (max-width: 600px) {
+    .buttonVar {
+        box-sizing: border-box;
+        border: 2px solid #ccd6dd;
+        border-radius: 5px;
+        width: 75%;
+        height: 35px;
+        color: rgb(255,55,55);
+        background: #ffffff;
+        font-weight: bold;
+        font-family: Courier New;
+        font-size: 12px;
+    }
+
+    .background{
+        box-sizing: border-box;
+        border: 2px solid #969696;
+        border-radius: 5px;
+        background: #ffffff;
+        background-image: url('../images/testi3.png');
+        width: 75%;
+    }
+    .collapsible {
+        background-color: #ffffff;
+        color: #292f33;
+        cursor: pointer;
+        width: 100%;
+        height: 35px;
+        border: 2px solid #ccd6dd;
+        text-align: left;
+        font-size: 15px;
+        font-family: Courier New;
+        font-weight: bold;
+        width: 75%;
+    }
+    .video{
+
+        width:90%;
+        height:30%;
+    }
+        .acbutton{
+            height: 35px;
+            box-sizing: border-box;
+            border: 2px solid #969696;
+            width: 50%;
+            border-radius: 10px;
+            font-family: Courier New;
+            font-weight: bold;
+            margin: 5%;
+            font-size: 15px;
+            text-align: center;
+            }
+    }
+
 </details>
