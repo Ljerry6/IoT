@@ -937,6 +937,12 @@
 
        $formInfoName = $_POST["fname"];
        $formInfoMessage = $_POST["info"];
+
+       $stmt = $conn->prepare("INSERT INTO Chat VALUES(:username, :message, aika)");
+       $stmt->bindValue(':username', $formInfoName);
+       $stmt->bindValue(':message', $formInfoMessage);
+       $stmt->execute();
+
        $sql = "INSERT INTO Chat (username, message, aika) VALUES ('" . $formInfoName . "', '" . $formInfoMessage . "', now())";
 
        if ($data = $conn->query($sql) == TRUE) {
