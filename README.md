@@ -927,7 +927,7 @@
       header.php
    </summary>
    
-         <?php
+      <?php
 
        include 'config.php';
        $conn = new mysqli($servername, $username, $password, $dbname);
@@ -949,6 +949,6 @@
        $conn->close();
        header("Location: support.php");
        die();
-   ?>
+      ?>
    
 </details>
