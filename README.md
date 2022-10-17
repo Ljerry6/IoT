@@ -1128,3 +1128,7 @@
 
 </details>
 
+
+[![Kuvat](link to image on GH)](https://github.com/Ljerry6/IoT/tree/main/images/foldericon2.png)](https://github.com/Ljerry6/IoT/tree/main/images)
+
+
