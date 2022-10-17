@@ -1129,6 +1129,6 @@
 </details>
 
 
-[![Kuvat](https://github.com/Ljerry6/IoT/tree/main/images/foldericon2.png)](https://github.com/Ljerry6/IoT/tree/main/images)](https://github.com/Ljerry6/IoT/tree/main/images)
+[![Kuvat](https://github.com/Ljerry6/IoT/tree/main/images/foldericon2.png)](https://github.com/Ljerry6/IoT/tree/main/images)
 
 
