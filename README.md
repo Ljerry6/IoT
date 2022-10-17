@@ -453,8 +453,7 @@
           <head>
              <title>Hälytin</title>
              <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <link href="style/style.css" rel="stylesheet">
+             <link href="style/style.css" rel="stylesheet">
 
        </head>
 
